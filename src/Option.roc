@@ -15,7 +15,7 @@ interface Option
     ]
     imports []
 
-Option t : [ None, Some t ]
+Option t : [None, Some t]
 
 isSome : Option a -> Bool
 isSome = \o ->
@@ -86,6 +86,6 @@ flatten = \o ->
 toList : Option a -> List a
 toList = \o ->
     when o is
-        None -> [ ]
-        Some a -> [ a ]
+        None -> []
+        Some a -> [a]
 
