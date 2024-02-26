@@ -20,8 +20,8 @@ Option t : [ None, Some t ]
 isSome : Option a -> Bool
 isSome = \o ->
     when o is
-        None -> False
-        Some _ -> True
+        None -> Bool.false
+        Some _ -> Bool.true
 
 isNone : Option a -> Bool
 isNone = \o -> !(isSome o)
